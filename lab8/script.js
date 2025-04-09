@@ -11,8 +11,8 @@ function getRandomString(min, max) {
     return result;
 }
 
-// 錯誤次數計數器
-let wrongCount = 0;
+
+let wrongCount = 0;// 錯誤次數計數器
 
 // 當頁面載入時，隨機產生 0 到 2 個字母的字串
 window.onload = function () {
@@ -31,8 +31,8 @@ document.addEventListener("keyup", function (event) {
         wrongCount++; // 打錯一次
     }
 
-    // 每次都加 1～3 個字母
-    container.textContent += getRandomString(1, 3);
+    
+    container.textContent += getRandomString(1, 3);// 每次都加 1～3 個字母
 
     // 如果連錯三次，就額外加 6 個字母
     if (wrongCount >= 3) {
