@@ -25,6 +25,6 @@ document.addEventListener("keyup", function (event) {
         container.textContent = currentText.slice(1);
     }
 
-    // 隨機產生 1 到 3 個新字母，並加到字串後面
-    container.textContent += getRandomString(1, 3);
+    
+    container.textContent += getRandomString(1, 3);// 隨機產生 1 到 3 個新字母，並加到字串後面
 });
